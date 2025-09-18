@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: #658147;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #658147;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+nav a:hover,
+nav a:focus {
+  font-weight: bold;
+  outline: none;
+  border: none;
+  scale: 105%;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 32px;
+  background-color: #729762;
+  text-align: left;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-sleman {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.jumbotron-text {
+    flex:1;
+    text-align: left;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #597445;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  .profile img {
+    width: 120px;
+  }
+}
